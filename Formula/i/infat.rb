@@ -17,6 +17,13 @@ class Infat < Formula
   depends_on "rust" => :build
   depends_on macos: :sonoma
 
+  deny_network_access!
+
+  def fetch
+    odie "Remove `cargo generate-lockfile`!" if build.stable? && version > "3.1.2"
+    system "cargo", "fetch", *std_cargo_fetch_args
+  end
+
   def install
     system "cargo", "install", *std_cargo_args(path: "infat-cli")
 
