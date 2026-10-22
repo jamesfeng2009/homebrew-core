@@ -6,7 +6,7 @@ class Pdfly < Formula
   url "https://files.pythonhosted.org/packages/48/ae/70f161c80b3f39d8fe4ff784c78045225820d10375c81c2097c0e85ac0fc/pdfly-0.5.1.tar.gz"
   sha256 "636e9736ca3296ed69ad7e14d997813ea5a662ba7a86c77d155e343494dcc3d7"
   license "BSD-3-Clause"
-  revision 26
+  revision 27
 
   bottle do
     rebuild 1
@@ -48,6 +48,11 @@ class Pdfly < Formula
     sha256 "13ae38502be632115abf8a24cbe5f4da52e3b5231990aff31123c805306ccb9c"
   end
 
+  resource "attrs" do
+    url "https://files.pythonhosted.org/packages/9a/8e/82a0fe20a541c03148528be8cac2408564a6c9a0cc7e9171802bc1d26985/attrs-26.1.0.tar.gz"
+    sha256 "d03ceb89cb322a8fd706d4fb91940737b6642aa36998fe130a9bc96c985eff32"
+  end
+
   resource "bcrypt" do
     url "https://files.pythonhosted.org/packages/d4/36/3329e2518d70ad8e2e5817d5a4cac6bba05a47767ec416c7d020a965f408/bcrypt-5.0.0.tar.gz"
     sha256 "f748f7c2d6fd375cc93d3fba7ef4a9e3a092421b8dbf34d8d4dc06be9492dfdd"
@@ -56,6 +61,11 @@ class Pdfly < Formula
   resource "brotli" do
     url "https://files.pythonhosted.org/packages/f7/16/c92ca344d646e71a43b8bb353f0a6490d7f6e06210f8554c8f874e454285/brotli-1.2.0.tar.gz"
     sha256 "e310f77e41941c13340a95976fe66a8a95b01e783d430eeaf7a2f87e0a57dd0a"
+  end
+
+  resource "certvalidator" do
+    url "https://files.pythonhosted.org/packages/a2/92/bb5902af005671fe343a55d50db4f1680f8a5551cd1f28f54118c4a61865/certvalidator-0.11.1.tar.gz"
+    sha256 "922d141c94393ab285ca34338e18dd4093e3ae330b1f278e96c837cb62cffaad"
   end
 
   resource "charset-normalizer" do
@@ -69,13 +79,13 @@ class Pdfly < Formula
   end
 
   resource "endesive" do
-    url "https://files.pythonhosted.org/packages/a0/c3/a0dcae019de40816352462371c473b22639cd8e68f33a5f23f07faf330fd/endesive-2.19.3-py3-none-any.whl"
-    sha256 "e5e09c1011b1977fbb9d563d672de7f17f5638304ce57a35bf7d00f3b7a3972e"
+    url "https://files.pythonhosted.org/packages/4d/61/f5fde789b0256a1842ffb50f7b0773a5755a53ad7046c49dc1905a614cc2/endesive-3.0.1-py3-none-any.whl"
+    sha256 "26f764bff6048a1d7f2ede0060b5da70db14539a627529a11b2ba1a77ad0050a"
   end
 
   resource "fonttools" do
-    url "https://files.pythonhosted.org/packages/87/b6/126c659ab7e0e03e01a5f5d223abf7b2c0691ae92718085a212a3924a2a3/fonttools-4.66.1.tar.gz"
-    sha256 "64967c6ddb0d4c610dfd8cb1485981b2d27972ddfb7d4bbbd9e199d2a089c450"
+    url "https://files.pythonhosted.org/packages/94/36/102e180f8f5dbaee88b26595b01ca8aa80bf4e62128d9aa94265b3996c96/fonttools-4.67.0.tar.gz"
+    sha256 "3cb57e6600ca77c0b1729cf8adc23bc0652633a37f18cfa934d9c7bc3de25519"
   end
 
   resource "fpdf2" do
@@ -108,9 +118,14 @@ class Pdfly < Formula
     sha256 "bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba"
   end
 
+  resource "oscrypto" do
+    url "https://files.pythonhosted.org/packages/06/81/a7654e654a4b30eda06ef9ad8c1b45d1534bfd10b5c045d0c0f6b16fecd2/oscrypto-1.3.0.tar.gz"
+    sha256 "6f5fef59cb5b3708321db7cca56aed8ad7e662853351e7991fcf60ec606d47a4"
+  end
+
   resource "paramiko" do
-    url "https://files.pythonhosted.org/packages/62/93/dcc25d52f49022ae6175d15e6bd751f1acc99b98bc61fc55e5155a7be2e7/paramiko-5.0.0.tar.gz"
-    sha256 "36763b5b95c2a0dcfdf1abc48e48156ee425b21efe2f0e787c2dd5a95c0e5e79"
+    url "https://files.pythonhosted.org/packages/76/cb/b1fde76618d84b1acf54d3d03d2b833ba5878afd12b9899346cc080f209d/paramiko-5.1.0.tar.gz"
+    sha256 "239b5f9b2a53006cd54f83cf8495ee742083708ead947882c8dd2786de79f39b"
   end
 
   resource "pygments" do
@@ -129,13 +144,13 @@ class Pdfly < Formula
   end
 
   resource "pypdf" do
-    url "https://files.pythonhosted.org/packages/45/7e/d08c72b29e89b1ad14acaae817685ca06bac93691bddfd4fac08a703e5b0/pypdf-6.20.0.tar.gz"
-    sha256 "72b1e897fef7f5bbed7f2a93881a4861d98dbf25ae39981c8a023583239edbda"
+    url "https://files.pythonhosted.org/packages/51/e1/32a9c4dbd94618145f8bab5c623bdb0a528f23fc8719afd77ba0278fd377/pypdf-6.21.1.tar.gz"
+    sha256 "2d62c383acd6e0dff0a96322ba8b1135229343b084d73c6f6cfd947fd291afcb"
   end
 
   resource "python-bidi" do
-    url "https://files.pythonhosted.org/packages/ce/e7/f168f2c3151aa05b9f9c9b2f7767bc8e06a133ea822c231ab497d4f36833/python_bidi-0.6.11.tar.gz"
-    sha256 "034090c597af250d699299d7e7f1e83eb016f9e47b3b707bd89ab2bdec77bce0"
+    url "https://files.pythonhosted.org/packages/3d/9d/b7ede7e25102f9e52c6cd5ffcd660eea659c2584001df84a352c76f62d74/python_bidi-0.6.12.tar.gz"
+    sha256 "bef41af9bfd16fc6cfc31d8b72a87023b52b5ebd468d9ff2f331a6843b2dad82"
   end
 
   resource "requests" do
