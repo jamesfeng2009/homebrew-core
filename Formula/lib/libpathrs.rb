@@ -16,6 +16,12 @@ class Libpathrs < Formula
   depends_on "rust" => :build
   depends_on :linux
 
+  deny_network_access!
+
+  def fetch
+    system "cargo", "fetch", *std_cargo_fetch_args
+  end
+
   def install
     # Not parallelizable because hack/with-crate-type.sh modifies Cargo.toml in-place
     ENV.deparallelize
